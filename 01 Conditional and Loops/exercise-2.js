@@ -6,23 +6,17 @@
 function calculateSalary(role) {
   switch (role) {
     case "ceo":
-      console.log(2200)
-      break;
+      return 2200
     case "manager":
-      console.log(1800)
-    break;
+      return 1800
     case "cto":
-      console.log(1800)
-    break;
+      return 1800;
     case "developer":
-      console.log(1500)
-    break;
+      return 1500;
+    case "other":
+      return calculateSalary("default");
     case "default":
-      console.log(1000)
-    break;
-    default: 
-      console.log("default")
-    break;
+      return 1000;
   }
 }
 
