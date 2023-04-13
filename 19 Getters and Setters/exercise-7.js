@@ -5,28 +5,28 @@ class Person {
     this.#age = age;
   }
 
-  set firstName(value) {
-    this.#firstName = value;
-  }
-
   get firstName() {
     return this.#firstName;
   }
 
-  set lastName(value) {
-    this.#lastName = value;
+  set firstName(value) {
+    this.#firstName = value;
   }
 
   get lastName() {
     return this.#lastName;
   }
 
-  set age(value) {
-    this.#age = value;
+  set lastName(value) {
+    this.#lastName = value;
   }
 
   get age() {
     return this.#age;
+  }
+
+  set age(value) {
+    this.#age = value;
   }
 
   get fullName() {
