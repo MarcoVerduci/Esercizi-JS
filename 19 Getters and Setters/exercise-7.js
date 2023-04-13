@@ -1,36 +1,36 @@
 class Person {
   constructor(firstName, lastName, age) {
-    this._firstName = firstName;
-    this._lastName = lastName;
-    this._age = age;
+    this.#firstName = firstName;
+    this.#lastName = lastName;
+    this.#age = age;
   }
 
   set firstName(value) {
-    this._firstName = value;
+    this.#firstName = value;
   }
 
   get firstName() {
-    return this._firstName;
+    return this.#firstName;
   }
 
   set lastName(value) {
-    this._lastName = value;
+    this.#lastName = value;
   }
 
   get lastName() {
-    return this._lastName;
+    return this.#lastName;
   }
 
   set age(value) {
-    this._age = value;
+    this.#age = value;
   }
 
   get age() {
-    return this._age;
+    return this.#age;
   }
 
   get fullName() {
-    return this._firstName + " " + this._lastName;
+    return this.#firstName + " " + this.#lastName;
   }
 }
 
