@@ -1,0 +1,37 @@
+<html>
+
+<body>
+  <div id="container">
+    <form>
+      <div>
+        <label>First Name:</label>
+        <input type="text" class="form-input" id="firstName" value="Mario" />
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input type="text" class="form-input" id="lastName" value="Rossi" />
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" class="form-input" id="age" value="25" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<script>
+  // code here
+  const firstNameLabel = document.querySelector('label[for = "firstname"]');
+  const firstNameInput = document.getElementById("firstname");
+  const lastNameLabel = document.querySelector('label[for = "lastname"]');
+  const lastNameInput = document.getElementById("lastname");
+  const ageLabel = document.querySelector('label[for = "age"]');
+  const ageInput = document.querySelector("age");
+
+  console.log(firstNameLabel.textContent + " " + firstNameInput.value);
+  console.log(lastNameLabel.textContent + " " + lastNameInput.value);
+  console.log(ageLabel.textContent + " " + ageInput.value);
+
+</script>
